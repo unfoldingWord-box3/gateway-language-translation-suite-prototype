@@ -22,7 +22,7 @@ jobs:
           echo "BRANCH=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
           echo ${GITHUB_REF#refs/heads/}
           echo ${GITHUB_REF}
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v3.3.0
         with:
           ref: ${{ env.BRANCH }}
       - uses: actions/setup-node@v2.1.5
